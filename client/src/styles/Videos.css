@@ -1,0 +1,86 @@
+.mainVideoContainer {
+    width: 100%;
+    height: 28rem;
+    margin-top: 2rem;
+    object-fit: cover;
+    position: relative;
+}
+
+.videoExtrasContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.videoExtrasContainer > .DontMissCardItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.videoExtrasContainer > .DontMissCardItem > .dMCardImage {
+    width: 100% !important;
+    height: 17rem !important ; 
+}
+
+.videoExtrasContainer > .DontMissCardItem > .dMCardImage > img {
+    width: 100% !important;
+    height: 100%; 
+}
+
+.Videos {
+    width: 70%;
+}
+
+.videoInfoContainer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white; 
+}
+
+.playButton {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.playButton ion-icon {
+    font-size: 7rem;
+}
+
+.playButton:hover {
+    opacity: 0.7;
+    color: red;
+    cursor: pointer;
+}
+
+
+@media(max-width: 1028px) {
+
+    .Videos {
+        width: 100%;
+    }
+
+    .videoExtrasContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .AdBanner {
+        width: 100%;
+    }
+    
+    .AdBanner > img {
+        width: 100%;
+    }
+
+    .mainVideoContainer {
+        height: 17rem;
+    }
+
+}

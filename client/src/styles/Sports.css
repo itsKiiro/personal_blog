@@ -1,0 +1,148 @@
+.Sports {
+    display: flex;
+    gap: 1rem;
+}
+
+.sportsHeaderContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.sportsIconContainer ion-icon {
+    padding: 0.4rem;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+
+.sportsIconContainer ion-icon:hover {
+    opacity: 0.4;
+}
+
+.sportsIconContainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.sportsHeaderContainer::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, red, green, blue);
+}
+
+.sportsLeftSide {
+    width: 70%;
+}
+
+.sportsRightSide {
+    width: 30%;
+}
+
+.stayConnectedHeaderContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+.stayConnectedHeaderContainer::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, red, green, blue);
+}
+
+.stayConnectedCardContainer {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connectedLinksContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 2rem;
+    gap: 1rem;
+    color: #fff;
+}
+
+.stayConnectedCardContainer:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.sportsAdContainer {
+    margin-top: 2rem;
+}
+
+.sportsRightContentContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sportsContentContainer {
+    padding-top: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.sportMainImageContainer {
+    width: 100%;
+}
+
+.sportsLeftContentContainer {
+    width: 50%;
+}
+
+@media(max-width: 1028px) {
+    .Sports {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sportsContentContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: smaller;
+    }
+
+    .sportsHeaderContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .sportsLeftContentContainer {
+        width: 100%;
+    }
+
+    .sportsRightContentContainer {
+        width: 100%;
+    }
+
+    .sportsLeftSide {
+        width: 100%;
+    }
+
+    .sportsRightSide {
+        width: 100%;
+    }
+
+}

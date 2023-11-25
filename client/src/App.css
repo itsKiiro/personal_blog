@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Roboto";
+}
+
+.Home {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+@media(max-width: 1028px) {
+  .AdBanner {
+    width: 100% !important;
+    height: 70px !important;
+  }
+
+  .AdBanner > img {
+    width: 100% !important;
+    height: 70px !important;
+  }
+}

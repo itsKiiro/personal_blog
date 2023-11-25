@@ -1,0 +1,89 @@
+.Navbar {
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.topNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.logo {
+    font-size: 3rem;
+}
+
+.adContainer {
+    width: 57%;
+}
+
+.adBannerImg {
+    height: 7rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.nav {
+    background-color: #4a4a4a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.navLinks {
+    display: flex;
+}
+
+.navLink {
+    padding: 1rem;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    font-weight: bold;
+}
+
+.navLink:hover {
+    cursor: pointer;
+    background-color: #7a7a7a;
+}
+
+.navSearchContainer {
+    padding: 1rem;
+    padding-right: 0;
+    border-left: solid 1px #fff;
+}
+
+.navSearchContainer > input {
+    background-color: #4a4a4a;
+    border: none;
+    width: 100%;
+}
+
+
+@media(max-width: 1028px) {
+
+    .nav {
+        display: none;
+    }
+
+    .topNav {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .adContainer {
+        width: 100%;
+    }
+
+    .adContainer > img {
+        height: 70px;
+    }
+
+}

@@ -1,0 +1,83 @@
+.Entertainment {
+    padding-top: 4rem;
+    padding-bottom: 7rem;
+}
+
+.entertainmentHeaderContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.entertainmentIconContainer ion-icon {
+    padding: 0.4rem;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+
+.entertainmentIconContainer ion-icon:hover {
+    opacity: 0.4;
+}
+
+.entertainmentIconContainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.entertainmentHeaderContainer::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, red, green, blue);
+}
+
+.entertainmentImageContainer {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    padding-top: 2rem;
+}
+
+.entertainmentImageContainer > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.entertainmentArticleContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 2rem;
+}
+
+.entertainmentInfoContainer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white; 
+
+}
+
+
+@media(max-width: 1028px) {
+    .entertainmentArticleContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-size: smaller;
+    }
+
+    .Entertainment {
+        width: 100%;
+    }
+
+    .entertainmentImageContainer {
+        font-size: smaller;
+    }
+}

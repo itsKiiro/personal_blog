@@ -1,0 +1,18 @@
+.TopBanner {
+    padding-left: 7%;
+    padding-right: 7%;
+    border-bottom-width: 100vw;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialLinksContainer ion-icon {
+    padding: 0.7rem;
+}
+
+.socialLinksContainer ion-icon:hover {
+    cursor: pointer;
+    opacity: 0.4;
+}
